@@ -23,14 +23,14 @@ public class Deletar_Algo extends AppCompatActivity {
 
         this.id = findViewById(R.id.id);
     }
-
+//metodo não terminado
     public void deleteUser(View view){
 
         String c = this.id.getText().toString();
 
         ConnectionServer connectionServer = new ConnectionServer();
         connectionServer.setType("DELETE");
-        connectionServer.setLink("https://api-gabrielm.herokuapp.com/users/" + c );
+        connectionServer.setLink("https://api-gabrielm.herokuapp.com/users/" );
 
         JSONObject response = null;
         try {
